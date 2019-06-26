@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <!DOCTYPE menu
+<!-- DTD -->
+<!DOCTYPE menu
 [
+
+
 <!ELEMENT menu (heading, sections+)>
 <!ELEMENT heading (title, address)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT address (#PCDATA)>
-<!ELEMENT sections (subtitle, options*)>
+<!ELEMENT section (subtitle, options*)>
 <!ELEMENT subtitle (#PCDATA)>
-<!ELEMENT options (item, price)>
+<!ELEMENT option (item, price)>
 <!ELEMENT item (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
-]> -->
-
-<!DOCTYPE menu SYSTEM "menu.dtd">
-
+]>
+<!-- XML -->
 <menu>
-    <heading>
-        <title>Title</title>
-        <address>Address</address>
-    </heading>
-    <sections>
-        <subtitle>Subtitle</subtitle>
-        <options>
-            <item>Item</item>
-            <price>Price</price>
-        </options>
-    </sections>
+	<heading>
+		<title>The Bar Cafe Menu</title>
+		<address>New York – Harrow - Paris</address>
+	</heading>
+	<sections>
+		<list>
+			<section>
+				<subtitle>Salads</subtitle>
+				<options>
+					<list>
+						<option>
+							<item>Chicken salad</item>
+							<price>3.50</price>
+						</option>
+						<option>
+							<item>Cheese salad</item>
+							<price>2.50</price>
+						</option>
+						<option>
+							<item>Tuna salad</item>
+							<price>2.00</price>
+						</option>
+					</list>
+				</options>
+			</section>
+			<section>
+				<subtitle>Pasta</subtitle>
+				<options>
+					<list>
+						<option>
+							<item>Vegetable Pasta</item>
+							<price>3.00</price>
+						</option>
+						<option>
+							<item>Spaghetti Bolognese</item>
+							<price>2.50</price>
+						</option>
+					</list>
+				</options>
+			</section>
+		</list>
+	</sections>
 </menu>
