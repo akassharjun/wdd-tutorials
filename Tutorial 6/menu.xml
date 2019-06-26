@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="menuStyle" ?>
+
 <!-- DTD -->
 <!DOCTYPE menu
 [
-
-
 <!ELEMENT menu (heading, sections+)>
 <!ELEMENT heading (title, address)>
 <!ELEMENT title (#PCDATA)>
