@@ -34,6 +34,8 @@
 ### Corrected XML
 
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
 <recipe>
   <name>Oyster Soup</name>
   <author>Jamie Oliver</author>
@@ -47,12 +49,12 @@
     </list>
   </ingredients>
   <process>
-    <P>Begin by sauteing the celery and onions in butter until
+    <p>Begin by sauteing the celery and onions in butter until
       soft.
       Add oysters, oyster liquor, and cream. Heat until the oysters
       float.
       Serve in warm bowls.</p>
-    <p><i>Yummy!</p></i>
+    <p><i>Yummy!</i></p>
   </process>
 </recipe>        
 ```
