@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-stylesheet href="menuStyle" ?>
+<?xml-stylesheet href="menuStyle.css" type='text/css'?>
 
 <!-- DTD -->
 <!DOCTYPE menu
