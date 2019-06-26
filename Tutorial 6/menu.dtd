@@ -1,0 +1,12 @@
+<!DOCTYPE menu
+[
+<!ELEMENT menu (heading, sections+)>
+<!ELEMENT heading (title, address)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT sections (subtitle, options*)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT options (item, price)>
+<!ELEMENT item (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>

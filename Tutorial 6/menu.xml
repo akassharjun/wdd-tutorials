@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- Write a XML DTD for a menu with the following structure:
-• A menu is made up of a heading followed by one or more sections;
-• A heading is made up of a title and an address in any order;
-• A section is made up of a subtitle followed by zero or more options;
-• An option is made up of an item followed by a price;
-• The following entries consist of plain text: title, address, subtitle, item, price.
-• Note:
-• The title is "The Bar Cafe Menu".
-• The address is "New York – Harrow - Paris". -->
-
-<!DOCTYPE menu
+<!-- <!DOCTYPE menu
 [
-<!ELEMENT menu (heading, sections)>
-<!-- <!ELEMENT heading (#PCDATA)>
-<!ELEMENT sections (#PCDATA)> -->
+<!ELEMENT menu (heading, sections+)>
 <!ELEMENT heading (title, address)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT address (#PCDATA)>
-<!ELEMENT sections (subtitle, options)>
+<!ELEMENT sections (subtitle, options*)>
 <!ELEMENT subtitle (#PCDATA)>
 <!ELEMENT options (item, price)>
 <!ELEMENT item (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
-]>
+]> -->
+
+<!DOCTYPE menu SYSTEM "menu.dtd">
+
+<menu>
+    <heading>
+        <title>Title</title>
+        <address>Address</address>
+    </heading>
+    <sections>
+        <subtitle>Subtitle</subtitle>
+        <options>
+            <item>Item</item>
+            <price>Price</price>
+        </options>
+    </sections>
+</menu>
